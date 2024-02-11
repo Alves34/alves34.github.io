@@ -1,0 +1,313 @@
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+:root {
+    --hero-gradient: radial-gradient(circle, #102228 0%, rgb(0, 0, 0) 180%);
+
+}
+
+header {
+    text-align: center;
+    height: 100vh;
+    /* Ajusta la altura al 100% del viewport height (altura de la ventana) */
+    margin-bottom: 50px;
+    /* Agrega margen inferior para que el contenido no se superponga */
+    background: var(--hero-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 100px;
+    color: #f6edd1;
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: #32acb1;
+
+}
+
+.hero p {
+    color: #f6edd1;
+    font-size: 25px;
+    font-family: Inter Light, sans-serif;
+}
+
+/* Estilos de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semitransparente */
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    /* Borde superior más delgado */
+    backdrop-filter: blur(5px);
+}
+
+.navbar-brand img {
+    max-width: 50px;
+    border-radius: 50px;
+}
+
+/* Estilos de la sección "Sobre Mí" */
+
+.col-md-6 h2 {
+    color: #32acb1;
+
+}
+
+
+.col-md-6 p {
+    color: #f6edd1;
+
+}
+
+
+
+/* Estilos de la sección de proyectos */
+.text-center{
+    margin-bottom: 60px;
+}
+.text-center h2 {
+
+    color: #32acb1;
+}
+
+
+.text-center p {
+
+    color: #f6edd1;
+
+}
+
+
+#proyectos {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#proyectos p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.proyecto-container {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 100px;
+    overflow: hidden;
+    border: 2px solid #f6edd1;
+    height: auto;
+}
+
+.proyecto-imagen {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para la información del proyecto */
+.proyecto-info {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.proyecto-info h3 {
+    color: #32acb1;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.proyecto-info p {
+    color: #f6edd1;
+}
+
+.proyecto-info .btn {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.proyecto-info .btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Diseño rectangulos*/
+
+/* Estilos para los rectángulos */
+.rectangulos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.rectangulo {
+    flex: 1; /* Hace que los rectángulos ocupen el mismo espacio */
+    max-width: 30%; /* Establece el ancho máximo de cada rectángulo */
+    padding: 10px; /* Agrega un espacio interno alrededor del contenido del rectángulo */
+    border-radius: 10px;
+    text-align: center; /* Centra el contenido del rectángulo */
+}
+
+/* Media query para hacer los rectángulos responsive */
+@media (max-width: 768px) {
+    .rectangulo {
+        max-width: 25%; /* Redefine el ancho máximo de los rectángulos para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .rectangulo {
+        max-width: 25%; /* Establece el ancho máximo al 100% para que los rectángulos ocupen todo el ancho del contenedor */
+        margin-bottom: 10px; /* Añade un margen inferior para separar los rectángulos */
+    }
+}
+
+
+/* Estilos adicionales para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content h3 {
+    color: #32acb1;
+}
+
+.contact-info,
+.social-media,
+.legal-info {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-info ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li,
+.social-media li {
+    margin-bottom: 10px;
+}
+
+.contact-info a,
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover,
+.social-media a:hover {
+    color: #32acb1;
+}
+
+
+
+
+/* Media Queries para hacer la página responsive */
+@media (max-width: 576px) {
+    /* Estilos para pantallas más pequeñas (tabletas y teléfonos) */
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h2 {
+
+        font-size: 30px;
+    }
+
+    .hero p {
+        color: #e0ddd9;
+        font-size: 15px;
+
+    }
+
+
+    /* Estilos de la sección de proyectos para dispositivos móviles */
+    @media (max-width: 576px) {
+        .proyecto {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Una sola columna */
+            grid-gap: 10px;
+            /* Espacio entre elementos */
+        }
+
+        .proyecto img {
+            max-width: 100%;
+            /* Ancho máximo de la imagen */
+            height: auto;
+            /* Altura automática para mantener la proporción */
+        }
+
+        .proyecto-info {
+            text-align: center;
+            /* Centra el contenido de la información */
+        }
+    }
+
+
+    .sobre-mi-container,
+    .proyectos-container,
+    .skills-container,
+    .contacto-container {
+        padding: 60px 0;
+    }
+}
+
+@media (min-width: 576px) {
+
+    /* Estilos para pantallas medianas (tabletas y pantallas más grandes) */
+    header {
+        padding: 80px 0;
+    }
+
+    .sobre-mi-container,
+    .proyectos-container,
+    .skills-container,
+    .contacto-container {
+        padding: 80px 0;
+    }
+}
